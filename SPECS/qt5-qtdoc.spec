@@ -2,8 +2,8 @@
 
 Summary: Main Qt5 Reference Documentation
 Name:    qt5-%{qt_module}
-Version: 5.15.3
-Release: 2%{?dist}
+Version: 5.15.9
+Release: 1%{?dist}
 
 License: GFDL
 Url:     http://www.qt.io
@@ -50,6 +50,10 @@ make install_docs INSTALL_ROOT=%{buildroot}
 
 
 %changelog
+* Tue Apr 18 2023 Jan Grulich <jgrulich@redhat.com> - 5.15.9-1
+- 5.15.9
+  Resolves: bz#2175731
+
 * Fri Apr 22 2022 Jan Grulich <jgrulich@redhat.com> - 5.15.3-2
 - Bump build to build against correct Qt version
   Resolves: bz#2061358
